@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spices</title>
+ 
+  <link rel="stylesheet" href="productstyle.css">
+  <link rel="stylesheet" href="cart.js">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="shortcut icon" href="./img/favlg.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+  <style>
+    /* body{
+      background-image: url(./recipe-mixes-table.png);
+      background-repeat: no-repeat;
+      background-size: 850vh 70vw;
+      background-color: #2a2a2a;
+    } */
+
+/* header starts */
+/* *{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ list-style: none;
+ scroll-behavior: smooth;
+ font-family: 'Poppins' , sans-serif;
+}
+    :root{
+ --bg-color: #2a2a2a;
+ --second-bg-color: #202020;
+ --text-color: #fff;
+ --second-color: #ccc;
+ --main-color: #ff4d05;
+ --big-font: 5rem;
+ --h2-font: 3rem;
+ --p-font: 1.1rem;
+}
+header{
+ position: relative;
+ width: 100%;
+ height: 95px;
+ top: 0;
+ right: 0;
+ z-index: 100;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background: var(--gray);
+ padding: 15px 5%;
+ border-bottom: 1px solid transparent;
+ transition: all 1s ease;
+}
+img{
+	height: 100px;
+	width: 120px;
+}
+span{
+ color: var(--main-color);
+}
+.navlist{
+ display: flex;
+.navlist a{
+ color: var(--second-color);
+ font-size: 17px;
+ font-weight: 500;
+ margin: 0 25px;
+ transition: all .45s ease;
+}
+.navlist a:hover{
+ color: var(--main-color);
+}
+.navlist a.active{
+ color: var(--main-color);
+}
+#menu-icon{
+ font-size: 35px;
+ color: var(--text-color);
+ z-index: 10001;
+ cursor: pointer;
+ margin-left: 25px;
+ display: none;
+}
+section{
+ padding: 160px 15% 120px;
+} */
+/* header ends */
+
+.product{
+  margin-top:150px;
+    width: 100%;
+    /* display: flex; */
+    height: 100%;
+}
+.cbox{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100%;
+  height: 100%;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 680px){
+	.cbox{
+    display: block;
+  }
+}
+
+h2 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+  padding: 10px;
+  padding-left: 95px;
+  color: rgb(255, 254, 254);
+  margin: 0;
+  vertical-align: middle;
+}
+h2 strong {
+    position: relative;
+  z-index: 2;
+  background: #000000;
+  /* background: url(./recipe-mixes-table.png); */
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+h2 span {
+  font-size: 0.7em;
+  color: rgb(121, 119, 119);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+h2:after {
+  position: absolute;
+  content: '';
+  z-index: 1; 
+  bottom: 50%;
+  margin-bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background:var(--main-color);
+}
+
+
+/* card starts */
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+ <!----header design--->
+ <header>
+  <a href="./home.html" class="logo"><img class="logo1" src="./img/default.png" alt="" width="200px" height="200px"></a>
+
+  <ul class="navlist">
+    <li><a href="home.html" >Home</a></li>
+    <li><a href="./productpg1.html" class="active" ><div class="dropdown">
+      <button class="dropbtn" class="active">Products<ion-icon class="pi" name="chevron-down-circle"></ion-icon></button>
+      <div class="dropdown-content">
+        <a href="./productpg1.html">Spices</a>
+        <a href="./productpg2.html">Pulses & Rice</a>
+        <a href="./productpg3.html">Condiments, Cooking Oils & Wheats</a>
+      </div>
+      </div></a></li>
+    <li><a href="#portfolio">Cart<sup><span class="badge bg-secondary" id="bd">0</span></sup></a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="./gallery.html">Gallery</a></li>
+    <li><a href="signin.html">SignUp/Login</a></li>
+  </ul>
+
+  <div class="search">
+    <input class="srch" type="search" name="" placeholder="Type To text">
+    <a href="#"> <button class="btn1">Search</button></a>
+  </div>
+
+
+  <div class="bx bx-menu" id="menu-icon">
+    
+  </div>
+</header>
+  <!-- header ends -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./cart.js"></script>
+  
+  <!-- body starts -->
+  <div class="product">
+
+    <h2><strong>Spices<span>( 11 )</span></strong></h2>
+
+    <!-- card starts -->
+    
+<div class="cbox">
+   
+    <div class="wrapper">
+      <div class="container">
+        <div class="top"><img class="propic" src="./productimg/kashredchilli.jpg" alt=""></div>
+        <div class="bottom">
+          <div class="left">
+            <div class="details">
+              <h1>Kashmiri Red Chilli</h1>
+              <p>Rs.150</p>
+            </div>
+            <div class="buy" id="btt"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="inside">
+        <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+        <div class="contents">
+          <h3>Details</h3>
+         <p>Kashmiri Red Chilies or (Kashmiri Laal Mirch) are characterized by their ability
+          to give a dark red colour to food, capable of coloring and adding flavour.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="top"><img class="propic" src="./productimg/caradamom.jpg" alt=""></div>
+        <div class="bottom">
+          <div class="left">
+            <div class="details">
+              <h1>Caradamom</h1>
+              <p>Rs.150</p>
+            </div>
+            <div class="buy" id="btt1"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="inside">
+        <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+        <div class="contents">
+          <h3>Details</h3>
+         <p>A really aromatic and flavourful spice which adds a palate touching taste to your meal
+          and specially sweets.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="top"><img class="propic" src="./productimg/bayleaf.jpg" alt=""></div>
+        <div class="bottom">
+          <div class="left">
+            <div class="details">
+              <h1>Bay leaf</h1>
+              <p>Rs100</p>
+            </div>
+            <div class="buy" id="btt2"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="inside">
+        <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+        <div class="contents">
+          <h3>Details</h3>
+         <p>Bay leaf is a good source of vitamin A, vitamin B6, and vitamin C. These vitamins are all
+          known to support a healthy immune system. Digestive aid.</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+    
+<div class="cbox">
+   
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/blackpepper.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Black Pepper</h1>
+            <p>Rs.250</p>
+          </div>
+          <div class="buy" id="btt3"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Black Pepper has anti-inflammatory properties. May benefit your brain, improve
+        blood sugar control, lower cholesterol levels, have cancer-fighting properties.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/cumin2.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Cumin</h1>
+            <p>Rs.75</p>
+          </div>
+          <div class="buy" id="btt4"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Using cumin as a spice increases antioxidant intake, promotes digestion, provides iron, may
+        improve blood sugar control and may reduce food-borne illnesses.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/cloves.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Cloves</h1>
+            <p>Rs.25</p>
+          </div>
+          <div class="buy" id="btt5"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Cloves are full of antioxidants. These compounds help your body to fight free radicals,
+        which damage your cells and can lead to disease.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="cbox">
+   
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/turmericpowder.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Turmeric Powder</h1>
+            <p>Rs.50</p>
+          </div>
+          <div class="buy" id="btt6"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Turmeric is first dried out in the sun light then ground into fine powder. Which comes
+        straight comes to your homes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/corianderpowder.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Coriander Powder</h1>
+            <p>Rs.200</p>
+          </div>
+          <div class="buy" id="btt7"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Coriander seeds are ground in our grinding machines which then is sifted out
+        to our spice boxes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/nutmeg.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Nutmeg</h1>
+            <p>Rs.250</p>
+          </div>
+          <div class="buy" id="btt8"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Nutmeg is found to have health benefits, including its ability to relieve pain, soothe indigestion. Main
+        ingredient in garam masala.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="cbox">
+   
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/mace2.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Mace</h1>
+            <p>Rs.25</p>
+          </div>
+          <div class="buy" id="btt6"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Taken by mouth for treating cancer, kidney disease, increasing menstrual flow; causing a
+        miscarriage, and as a hallucinogen.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/cinamon.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Cinnamon</h1>
+            <p>Rs.50</p>
+          </div>
+          <div class="buy" id="btt7"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Details</h3>
+       <p>Cinnamon comes from the inner bark of multiple tree species. Harvesters scrape off the
+        outer layers to reveal the inner, wetter bark. The bark dries for several hours, naturally
+        curling into quills (or sticks) in the process. Finally, it is cut into small pieces and sold.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  <div class=" data-pagination ">
+    <a href=# class=" disabled "><ion-icon name="chevron-back-outline"></ion-icon></a>
+    <ul>
+      <li class=current><a href="productpg1.html">1</a>
+      <li><a href="productpg2.html">2</a>
+      <li><a href="productpg3.html">3</a>
+     
+    </ul>
+    <a href="productpg2.html"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+  </div>
+
+ <!-- footer starts -->
+
+ <footer>
+  <div class="row">
+    <div class="col">
+        <img src="./img/default.png" class="logo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+Ea quod quibusdam aliquid repudiandae laboriosam <br>sed magni odit atque  ullam. Loreat, quo enim dolorum.</p>
+
+    </div>
+      <div class="col">
+        <h3>OFFICE <div class="underline"><span></span></div></h3>
+        <p>ABC Road</p>
+        <p>Karachi-Bufferzone</p>
+        <p>Pakistan, Sindh</p>
+        <p class="email-id">mustafasif1020@gmail.com</p>
+        <h4>+92 123456789</h4>
+      </div>
+      <div class="col">
+        <h3>LINKS<div class="underline"><span></span></div></h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>     
+      <div class="col">
+        <h3>NEWSLETTER<div class="underline"><span></span></div></h3>
+        <form>
+          <ion-icon name="mail-open"></ion-icon>
+          <input type="email" placeholder="enter your email" required>
+          <button type="submit"><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+        </form>
+        <div class="social-icons">
+          <!-- <i class="fa-brands fa-facebook"></i> --><ion-icon name="logo-facebook"></ion-icon>
+          <!-- <i class="fa-brands fa-instagram"></i> --><ion-icon name="logo-instagram"></ion-icon>
+          <!-- <i class="fa-brands fa-twitter"></i> --><ion-icon name="logo-twitter"></ion-icon>
+          <!-- <i class="fa-brands fa-whatsapp "></i> --><ion-icon name="logo-whatsapp"></ion-icon>
+        </div>
+      </div>
+     
+
+
+  </div>
+  <hr>
+  <p class="copyright">Mustafa Asif © 2022 - All Right Reserved</p>
+</footer>
+
+
+<!-- footer ends -->
+
+
+
+</body>
+</html>

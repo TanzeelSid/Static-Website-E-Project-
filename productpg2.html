@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulses/Rice</title>
+  <link rel="stylesheet" href="productstyle.css">
+  <link rel="stylesheet" href="cart.js">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favlg.png" type="image/x-icon">
+  <style>
+   
+
+.product{
+  margin-top:150px;
+    width: 100%;
+    /* display: flex; */
+    height: 100%;
+}
+.cbox{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100%;
+  height: 100%;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 680px){
+	.cbox{
+    display: block;
+  }
+}
+
+h2 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+  padding: 10px;
+  padding-left: 95px;
+  color: rgb(255, 254, 254);
+  margin: 0;
+  vertical-align: middle;
+}
+h2 strong {
+    position: relative;
+  z-index: 2;
+  background: #000000;
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+h2 span {
+  font-size: 0.7em;
+  color: rgb(121, 119, 119);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+h2:after {
+  position: absolute;
+  content: '';
+  z-index: 1; 
+  bottom: 50%;
+  margin-bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background:var(--main-color);
+}
+
+
+/* card starts */
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <!----header design--->
+ <header>
+  <a href="./home.html" class="logo"><img class="logo1" src="./img/default.png" alt="" width="200px" height="200px"></a>
+
+  <ul class="navlist">
+    <li><a href="home.html" >Home</a></li>
+    <li><a href="./productpg1.html" class="active" ><div class="dropdown">
+      <button class="dropbtn" class="active">Products<ion-icon class="pi" name="chevron-down-circle"></ion-icon></button>
+      <div class="dropdown-content">
+        <a href="./productpg1.html">Spices</a>
+        <a href="./productpg2.html">Pulses & Rice</a>
+        <a href="./productpg3.html">Condiments, Cooking Oils & Wheats</a>
+      </div>
+      </div></a></li>
+    <li><a href="#portfolio">Cart<sup><span class="badge bg-secondary" id="bd">0</span></sup></a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="./gallery.html">Gallery</a></li>
+    <li><a href="signin.html">SignUp/Login</a></li>
+  </ul>
+
+  <div class="search">
+    <input class="srch" type="search" name="" placeholder="Type To text">
+    <a href="#"> <button class="btn1">Search</button></a>
+  </div>
+
+
+  <div class="bx bx-menu" id="menu-icon">
+    
+  </div>
+</header>
+  <!-- header ends -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./cart.js"></script>
+  
+  <!-- body starts -->
+  <div class="product">
+
+    <h2><strong>Pulses<span>( 4 )</span></strong></h2>
+
+    <!-- card starts -->
+    
+<div class="cbox">
+   
+    <div class="wrapper">
+      <div class="container">
+        <div class="top"><img class="propic" src="./productimg/brownlentil.jpg" alt=""></div>
+        <div class="bottom">
+          <div class="left">
+            <div class="details">
+              <h1>Brown Lentil</h1>
+              <p>Rs.250</p>
+            </div>
+            <div class="buy" id="btt"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="inside">
+        <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+        <div class="contents">
+          <h3>Description</h3>
+         <p>Lentils are rich in fibre folate and potassium making them a great choice for the
+            heart and for managing blood pressure and cholesterol. They are also a source of Iron and vitamin
+            B1 which helps maintain a steady heartbeat. Order now to prepare meals from our organic pulses.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="top"><img class="propic" src="./productimg/redlentil.jpg" alt=""></div>
+        <div class="bottom">
+          <div class="left">
+            <div class="details">
+              <h1>Red Lentils</h1>
+              <p>Rs.200</p>
+            </div>
+            <div class="buy" id="btt1"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="inside">
+        <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+        <div class="contents">
+          <h3>Description</h3>
+         <p>Eating just one cup of cooked Red lentils each day provides 90% of the 400
+            micrograms of folate needed daily by adults. Red lentils are superior in providing B-vitamins.
+            Order now to prepare meals from our organic pulses.</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+</div>
+    
+<div class="cbox">
+
+    <div class="wrapper">
+        <div class="container">
+          <div class="top"><img class="propic" src="./productimg/redbeans.jpg" alt=""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <h1>Red Beans</h1>
+                <p>Rs.150</p>
+              </div>
+              <div class="buy" id="btt2"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+          <div class="contents">
+            <h3>Description</h3>
+           <p>Highly Organic Red beans are an excellent low-fat source of protein and dietary fiber.
+              Red beans also contain phytonutrients. Red beans are a good source of iron, phosphorus and
+              potassium. weight loss or to prevent from weight gain.
+              Order now to prepare meals from our organic pulses.</p>
+          </div>
+        </div>
+      </div>
+   
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/chickpeas.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Chickpeas</h1>
+            <p>Rs.50</p>
+          </div>
+          <div class="buy" id="btt3"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Description</h3>
+       <p>Chickpeas can be a very good substitute for people with gluten intolerance. They regular
+        use of chickpeas provided by our warehouses can be very efficient in controlling blood sugar level
+        and they also soothes constipation. Order now to prepare meals from our organic pulses.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<h2><strong>Rice Products<span>( 4 )</span></strong></h2>
+
+
+
+<div class="cbox">
+   
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/basmati.jpg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Basmati Rice</h1>
+            <p>Rs.250</p>
+          </div>
+          <div class="buy" id="btt6"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Description</h3>
+       <p>Harvested from our own organic farm lands. Being delivered to you as soon as they are
+        ripe and the taste has evolved. Good for diabetic patients and relief for gluten conscious people
+        which make your meal tastier.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="top"><img class="propic" src="./productimg/riceflour.jpeg" alt=""></div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>Rice Flour</h1>
+            <p>Rs.230</p>
+          </div>
+          <div class="buy" id="btt7"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+      <div class="contents">
+        <h3>Description</h3>
+       <p>From our organic farms Long grain rice are ground in the traditional mill stone which is
+        transformed in to fine rice flour which keep the nutrients intact.</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+</div>
+
+
+<div class="cbox">
+
+    <div class="wrapper">
+        <div class="container">
+          <div class="top"><img class="propic" src="./productimg/ricevinegar.jpg" alt=""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <h1>Rice Vinegar</h1>
+                <p>Rs.180</p>
+              </div>
+              <div class="buy" id="btt8"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+          <div class="contents">
+            <h3>Description</h3>
+           <p>We ferment our gluten containing rice in a special brine which sleeps in the dark for
+            many days and becomes a nutritious and organic rice vinegar. Good for health.</p>
+          </div>
+        </div>
+      </div>
+   
+    <div class="wrapper">
+      <div class="container">
+        <div class="top"><img class="propic" src="./productimg/ricenoodles.jpg" alt=""></div>
+        <div class="bottom">
+          <div class="left">
+            <div class="details">
+              <h1>Rice Noodles</h1>
+              <p>Rs.120</p>
+            </div>
+            <div class="buy" id="btt3"><i class="material-icons"><ion-icon name="cart-outline"></ion-icon></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="inside">
+        <div class="icon"><i class="material-icons"><ion-icon name="alert-circle"></ion-icon></i></div>
+        <div class="contents">
+          <h3>Description</h3>
+         <p>Rice flour is kneaded in the presence of water and salt to form dough and is then
+            sheeted, compounded, steamed and cut to form a noodle strands. Order now to prepare meals from our organic rice.</p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  </div>
+
+
+  <div class=" data-pagination ">
+    <a href="productpg1.html" ><ion-icon name="chevron-back-outline"></ion-icon></a>
+    <ul>
+      <li ><a href="productpg1.html">1</a>
+      <li class=current><a href="productpg2.html">2</a>
+      <li><a href="productpg3.html">3</a>
+     
+    </ul>
+    <a href="productpg3.html"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+  </div>
+
+
+  <!-- footer starts -->
+
+<footer>
+  <div class="row">
+    <div class="col">
+        <img src="./img/default.png" class="logo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+Ea quod quibusdam aliquid repudiandae laboriosam <br>sed magni odit atque  ullam. Loreat, quo enim dolorum.</p>
+
+    </div>
+      <div class="col">
+        <h3>OFFICE <div class="underline"><span></span></div></h3>
+        <p>ABC Road</p>
+        <p>Karachi-Bufferzone</p>
+        <p>Pakistan, Sindh</p>
+        <p class="email-id">mustafasif1020@gmail.com</p>
+        <h4>+92 123456789</h4>
+      </div>
+      <div class="col">
+        <h3>LINKS<div class="underline"><span></span></div></h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>     
+      <div class="col">
+        <h3>NEWSLETTER<div class="underline"><span></span></div></h3>
+        <form>
+          <ion-icon name="mail-open"></ion-icon>
+          <input type="email" placeholder="enter your email" required>
+          <button type="submit"><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+        </form>
+        <div class="social-icons">
+          <!-- <i class="fa-brands fa-facebook"></i> --><ion-icon name="logo-facebook"></ion-icon>
+          <!-- <i class="fa-brands fa-instagram"></i> --><ion-icon name="logo-instagram"></ion-icon>
+          <!-- <i class="fa-brands fa-twitter"></i> --><ion-icon name="logo-twitter"></ion-icon>
+          <!-- <i class="fa-brands fa-whatsapp "></i> --><ion-icon name="logo-whatsapp"></ion-icon>
+        </div>
+      </div>
+     
+
+
+  </div>
+  <hr>
+  <p class="copyright">Mustafa Asif © 2022 - All Right Reserved</p>
+</footer>
+
+
+<!-- footer ends -->
+
+
+
+</body>
+</html>

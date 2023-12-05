@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        footer{
+   width: 100%;
+   margin-top: 1000px;
+   bottom: 0;
+   /* background: linear-gradient(to right, #00093c, #2d0b00); */
+   background-image: linear-gradient(to right top, #00093c, #2d0b00);
+   color: #fff;
+   padding: 100px 0 30px;
+   border-top-left-radius: 125px;
+   font-size: 13px;
+   line-height: 20px;
+   
+   
+   
+}
+.row{
+   width: 85%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+
+}
+.col{
+   flex-basis: 25%;
+   padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+   flex-basis: 15%;
+}
+.logo{
+   width: 80px;
+   margin-bottom: 30px;
+}
+.col h3{
+   width: fit-content;
+   margin-bottom: 40px;
+   position: relative;
+
+}
+.email-id{
+   width: fit-content;
+   border-bottom: 1px solid #ccc;
+   margin: 20px 0;
+}
+ul li{
+   list-style: none;
+   margin-bottom: 12px;
+}
+ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+form{
+   padding-bottom: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 50px;
+}
+ form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+   
+ }
+
+ 
+ form input{
+   width: 100%;
+   background: transparent;
+   color: #ccc;
+   border: 0;
+   outline: none;
+ }
+
+ form button{
+   background: transparent;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+ }
+
+ form button .fa-solid{
+   font-size: 16px;
+   color: #ccc;
+ }
+
+ .social-icons .fa-brands{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 40px;
+   font-size: 20px;
+   color: #000;
+   background: #fff;
+   margin: 15px;
+   cursor: pointer;
+
+ }
+ hr{
+   width: 90%;
+   border: 0;
+   border-bottom: 1px solid #ccc;
+   margin: 20px auto;
+ }
+ .copyright{
+   text-align: center;
+ }
+ .underline{
+   width: 100%;
+   height: 5px;
+   background: #767676;
+   position: absolute;
+   border-radius: 3px;
+   top: 30px;
+   left: 0;
+   overflow: hidden;
+ }
+ .underline span{
+   width: 15px;
+   height: 100%;
+   background: #fff;
+   border-radius: 3px;
+   position: absolute;
+   top: 0;
+   left: 10px;
+   animation: moving 2s linear infinite;
+ }
+@keyframes moving{
+   0%{
+      left: -20;
+   }
+   100%{
+      left: 100%;
+   }
+}
+@media (max-width: 700px){
+     footer{
+      bottom: unset;
+     }
+
+}
+
+
+
+
+
+video{
+   margin-top: 100px;
+   margin-left: 165px;
+}
+.pagination{
+   margin-left: 650px;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+
+<footer>
+    <div class="row">
+      <div class="col">
+          <img src="./house-logo-design-vector-real-estate-logo-photos-25.png" class="logo">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+  Ea quod quibusdam aliquid repudiandae laboriosam <br>sed magni odit atque  ullam. Loreat, quo enim dolorum.</p>
+
+      </div>
+        <div class="col">
+          <h3>OFFICE <div class="underline"><span></span></div></h3>
+          <p>ABC Road</p>
+          <p>Karachi-Bufferzone</p>
+          <p>Pakistan, Sindh</p>
+          <p class="email-id">mustafasif1020@gmail.com</p>
+          <h4>+92 123456789</h4>
+        </div>
+        <div class="col">
+          <h3>LINKS<div class="underline"><span></span></div></h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>     
+        <div class="col">
+          <h3>NEWSLETTER<div class="underline"><span></span></div></h3>
+          <form>
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="enter your email" required>
+            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp "></i>
+          </div>
+        </div>
+       
+
+
+    </div>
+    <hr>
+    <p class="copyright">Mustafa Asif © 2022 - All Right Reserved</p>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
